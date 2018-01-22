@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> FIRST ONE </title>
+<script>
+function myfunction()
+{
+  document.getElementById("hello").innerHTML="i";
+}
+function validateForm()
+{
+  var x = document.forms["myForm"]["text"].value;
+  if(x=="")
+  {
+  alert("Name must be filled out")
+  return false;
+}
+}
+</script>
+<style>
+table, th, td
+{
+
+
+}
+</style>
+</head>
+<body>
+<h1> HELLO </h1>
+<p style="background-image:url('myphoto.jpg');"><a href="https://www.freecodecamp.org/fcc367d8279-d9e0-458e-ade8-1a2aef791e46" alt = "naah" style= "color:blue;">>check it out<</a> </p>
+<a href= "https://www.linkedin.com/in/sneh-koul-394ab8150/" target="_blank">hi</a>
+<table style="width:100%">
+  <caption>details of sneh</caption>
+  <tr>
+    <th colspan="2">Name</th>
+    <th colspan="4">class</th>
+  </tr>
+  <tr>
+    <td>sneh</td>
+    <td>12</td>
+</tr>
+</table>
+<ul style="list-style-type:disc">
+  <li>hi</li>
+  <li>bye</li>
+</ul>
+<form action="https://www.freecodecamp.org/fcc367d8279-d9e0-458e-ade8-1a2aef791e46" target="_blank" >
+  FIRST NAME:<br>
+  <input type="text" name="firstname"><br>
+  LAST NAME:<br>
+  <input type="text" name="lastname"><br>
+  <input type="submit" name= "submit" value="SUBMIT"><br>
+
+</form>
+<h2>what can javascript do?</h2>
+<p id="demo">javascipt can change content</p>
+
+
+<button type="button" onclick='document.getElementById("demo").innerHTML="hello javascipt"'>javascipt</button>
+<p id="hello">see the picture</p>
+
+<button onclick='myfunction()'>hey</button>
+
+<form action="https://www.freecodecamp.org/fcc367d8279-d9e0-458e-ade8-1a2aef791e46" onsubmit = "return validateForm() " name="myForm">Name:<input type="text" name="text">
+  <input type="submit" name="submit">
+</form>
+
+
+
+
+
+</body>
+</html>
